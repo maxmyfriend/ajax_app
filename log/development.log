@@ -3867,3 +3867,592 @@ Processing by PostsController#index as */*
 Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.4ms | Allocations: 9480)
 
 
+Started GET "/" for ::1 at 2021-03-23 16:47:26 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 8589)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/ksudo/projects/ajax_app/public/packs
+[Webpacker] Hash: 36d0792aa7929dc102e6
+Version: webpack 4.46.0
+Time: 962ms
+Built at: 2021/03/23 16:47:29
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9e6654dcd01682466134.js    125 KiB  application  [emitted] [immutable]  application
+js/application-9e6654dcd01682466134.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9e6654dcd01682466134.js js/application-9e6654dcd01682466134.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/memo.js] 477 bytes {application} [built]
+[./app/javascript/packs/application.js] 770 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3918ms (Views: 3914.3ms | ActiveRecord: 0.5ms | Allocations: 44564)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 16:47:58 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"JIgUznGpRYmRRJLHKo86e+9PzdW2jLkVGrHJ82nMVfMOmr8hU4VGuUCwPsh6HRf4msLIbrbj/Sb4gzv0DNv17A==", "content"=>"memo5"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (1.2ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('memo5', '2021-03-23 07:47:58.511759', '2021-03-23 07:47:58.511759')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 11ms (Views: 1.0ms | ActiveRecord: 2.6ms | Allocations: 2986)
+
+
+Started GET "/" for ::1 at 2021-03-23 17:13:00 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2725)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/ksudo/projects/ajax_app/public/packs
+[Webpacker] Hash: 6233cc7e9f8909feef76
+Version: webpack 4.46.0
+Time: 946ms
+Built at: 2021/03/23 17:13:03
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ceb3c26479e1a2442bd2.js    125 KiB  application  [emitted] [immutable]  application
+js/application-ceb3c26479e1a2442bd2.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ceb3c26479e1a2442bd2.js js/application-ceb3c26479e1a2442bd2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/memo.js] 866 bytes {application} [built]
+[./app/javascript/packs/application.js] 770 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3784ms (Views: 3781.9ms | ActiveRecord: 0.7ms | Allocations: 41348)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:13 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"ElHhtDpQ0i4q9xI4S1jPjgdOiq1zV4I5A5Os/gvOT/M4Q0pbGHzRHvsDvjcbyuINcsOPFnM4xgrhoV75btnv7A==", "content"=>"メモ１"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ１', '2021-03-23 08:13:13.090762', '2021-03-23 08:13:13.090762')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 2.7ms | Allocations: 2955)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:15 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"ElHhtDpQ0i4q9xI4S1jPjgdOiq1zV4I5A5Os/gvOT/M4Q0pbGHzRHvsDvjcbyuINcsOPFnM4xgrhoV75btnv7A==", "content"=>"メモ２"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (1.8ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('メモ２', '2021-03-23 08:13:15.882109', '2021-03-23 08:13:15.882109')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 2.7ms | Allocations: 2962)
+
+
+Started GET "/" for ::1 at 2021-03-23 17:13:46 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2768)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/ksudo/projects/ajax_app/public/packs
+[Webpacker] Hash: cffd6544625ccbccbc9f
+Version: webpack 4.46.0
+Time: 961ms
+Built at: 2021/03/23 17:13:49
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a0fc5b1b78ddb4e40e0e.js    125 KiB  application  [emitted] [immutable]  application
+js/application-a0fc5b1b78ddb4e40e0e.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a0fc5b1b78ddb4e40e0e.js js/application-a0fc5b1b78ddb4e40e0e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/memo.js] 866 bytes {application} [built]
+[./app/javascript/packs/application.js] 770 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3750ms (Views: 3748.5ms | ActiveRecord: 0.4ms | Allocations: 41387)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:54 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (1.4ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:54.551267', '2021-03-23 08:13:54.551267')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 2952)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:55 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (1.8ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:55.624006', '2021-03-23 08:13:55.624006')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 2.7ms | Allocations: 2954)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:56 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (1.5ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:56.051530', '2021-03-23 08:13:56.051530')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 2.4ms | Allocations: 2954)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:56 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (1.6ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:56.429542', '2021-03-23 08:13:56.429542')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 2958)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:56 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (1.8ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:56.666725', '2021-03-23 08:13:56.666725')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 26ms (Views: 0.3ms | ActiveRecord: 2.7ms | Allocations: 2969)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:56 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:56.855591', '2021-03-23 08:13:56.855591')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.3ms | Allocations: 2950)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:57 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:57.030897', '2021-03-23 08:13:57.030897')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 2.1ms | Allocations: 4776)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:57 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (1.8ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:57.187604', '2021-03-23 08:13:57.187604')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 2.4ms | Allocations: 2952)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:57 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:57.338044', '2021-03-23 08:13:57.338044')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.2ms | Allocations: 2964)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:57 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:57.480622', '2021-03-23 08:13:57.480622')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 2946)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:57 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:57.621184', '2021-03-23 08:13:57.621184')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 2954)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:57 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:57.906404', '2021-03-23 08:13:57.906404')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 2954)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:58 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:58.009761', '2021-03-23 08:13:58.009761')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 2960)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:58 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:58.085154', '2021-03-23 08:13:58.085154')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.4ms | Allocations: 2950)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:58 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (1.5ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:58.175188', '2021-03-23 08:13:58.175188')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 2.3ms | Allocations: 2952)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:58 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.6ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:58.279109', '2021-03-23 08:13:58.279109')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 2.2ms | Allocations: 4719)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:58 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:58.372837', '2021-03-23 08:13:58.372837')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 2950)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:58 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:58.464834', '2021-03-23 08:13:58.464834')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 2946)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:58 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:58.561552', '2021-03-23 08:13:58.561552')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 2952)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:58 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:58.656869', '2021-03-23 08:13:58.656869')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 2946)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:58 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:58.759767', '2021-03-23 08:13:58.759767')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 2.0ms | Allocations: 2956)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 17:13:58 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"Y5lHII4KMazu1xZvx6mddk9afgAeFNB21avN57HrP8lJi+zPrCYynD8jumCXO7D1Otd7ux57lEU3mT/g1Pyf1g==", "content"=>"あ"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (1.7ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('あ', '2021-03-23 08:13:58.846361', '2021-03-23 08:13:58.846361')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 3.1ms | Allocations: 2958)
+
+
+Started GET "/" for ::1 at 2021-03-23 17:14:00 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3230)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.4ms | Allocations: 8468)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 18:01:15 +0900
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"5UihURlTyjYeVId89MB4CErtWoDfG/DDkzL7JFzbFZHPWgq+O3/JBs+gK3OkUlWLP2BfO990tPBxAAkjOcy1jg==", "content"=>"memo"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (1.7ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('memo', '2021-03-23 09:01:15.228361', '2021-03-23 09:01:15.228361')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 13ms (Views: 0.8ms | ActiveRecord: 4.0ms | Allocations: 2946)
+
+
+Started GET "/" for ::1 at 2021-03-23 18:01:22 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 3498)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/ksudo/projects/ajax_app/public/packs
+[Webpacker] Hash: 3e102a9d19736a9b8829
+Version: webpack 4.46.0
+Time: 1031ms
+Built at: 2021/03/23 18:01:25
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-96147fc9d12431d426bf.js    125 KiB  application  [emitted] [immutable]  application
+js/application-96147fc9d12431d426bf.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-96147fc9d12431d426bf.js js/application-96147fc9d12431d426bf.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/memo.js] 958 bytes {application} [built]
+[./app/javascript/packs/application.js] 770 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3795ms (Views: 3791.2ms | ActiveRecord: 0.6ms | Allocations: 41231)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 18:01:32 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"nqtn80xbSx4HNZoyWZdCoN2MV7qvaMYRnQoLrQKOHJi0ucwcbndILtbBNj0JBW8jqAFSAa8HgiJ/OPmqZ5m8hw==", "content"=>"memo"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (1.7ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('memo', '2021-03-23 09:01:32.501821', '2021-03-23 09:01:32.501821')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 2.5ms | Allocations: 2953)
+
+
+Started GET "/" for ::1 at 2021-03-23 18:02:51 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3277)
+[Webpacker] Compiling...
+Started POST "/posts" for ::1 at 2021-03-23 18:02:54 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"nqtn80xbSx4HNZoyWZdCoN2MV7qvaMYRnQoLrQKOHJi0ucwcbndILtbBNj0JBW8jqAFSAa8HgiJ/OPmqZ5m8hw==", "content"=>"memo"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.9ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('memo', '2021-03-23 09:02:54.079039', '2021-03-23 09:02:54.079039')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (33.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 39ms (Views: 0.4ms | ActiveRecord: 34.9ms | Allocations: 2954)
+
+
+[Webpacker] Compiled all packs in /Users/ksudo/projects/ajax_app/public/packs
+[Webpacker] Hash: b0f408efcaed89e67117
+Version: webpack 4.46.0
+Time: 859ms
+Built at: 2021/03/23 18:02:54
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-89954e9c4c7501423dc5.js    125 KiB  application  [emitted] [immutable]  application
+js/application-89954e9c4c7501423dc5.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-89954e9c4c7501423dc5.js js/application-89954e9c4c7501423dc5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/memo.js] 950 bytes {application} [built]
+[./app/javascript/packs/application.js] 770 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3509ms (Views: 3507.8ms | ActiveRecord: 0.5ms | Allocations: 39614)
+
+
+Started POST "/posts" for ::1 at 2021-03-23 18:02:58 +0900
+Processing by PostsController#create as */*
+  Parameters: {"authenticity_token"=>"G+CWUni9n7CprzJ19AwuN110/2Lrn5AkqPvxxfq+d+Qx8j29WpGcgHhbnnqkngO0KPn62evw1BdKyQPCn6nX+w==", "content"=>"投稿できてる！"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[36mPost Create (0.5ms)[0m  [1m[32mINSERT INTO `posts` (`content`, `created_at`, `updated_at`) VALUES ('投稿できてる！', '2021-03-23 09:02:58.228341', '2021-03-23 09:02:58.228341')[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:11:in `create'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.3ms | Allocations: 2946)
+
+
+Started GET "/" for ::1 at 2021-03-23 18:20:14 +0900
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3314)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/ksudo/projects/ajax_app/public/packs
+[Webpacker] Hash: 0fa481a251c439ee7b3c
+Version: webpack 4.46.0
+Time: 1000ms
+Built at: 2021/03/23 18:20:17
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-f8e8423bc92f63c2d0b4.js    125 KiB  application  [emitted] [immutable]  application
+js/application-f8e8423bc92f63c2d0b4.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-f8e8423bc92f63c2d0b4.js js/application-f8e8423bc92f63c2d0b4.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/memo.js] 1.09 KiB {application} [built]
+[./app/javascript/packs/application.js] 770 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3831ms (Views: 3829.0ms | ActiveRecord: 1.0ms | Allocations: 41942)
+
+
+Started GET "/" for ::1 at 2021-03-23 18:20:32 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 3315)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.5ms | Allocations: 8546)
+
+
+Started GET "/" for ::1 at 2021-03-23 18:20:34 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3314)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.8ms | Allocations: 8553)
+
+
+Started GET "/" for ::1 at 2021-03-23 18:20:34 +0900
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` ORDER BY `posts`.`id` DESC[0m
+  ↳ app/views/posts/index.html.erb:10
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3314)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.6ms | Allocations: 8551)
+
+
+Started POST "/post" for ::1 at 2021-03-23 18:20:44 +0900
+  
+ActionController::RoutingError (No route matches [POST] "/post"):
+  
+actionpack (6.0.3.5) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.5) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
